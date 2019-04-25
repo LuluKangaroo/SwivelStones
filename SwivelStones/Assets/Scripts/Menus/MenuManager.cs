@@ -9,10 +9,10 @@ public static class MenuManager
     {
         switch (menu)
         {
-            case MenuName.Scores:
+            case MenuName.HighScores:
 
                 // go to Scores Menu scene
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("HighScores");
                 break;
 
             case MenuName.Instructions:

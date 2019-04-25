@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void GoToScoresList()
     {
-        MenuManager.GoToMenu(MenuName.Scores);
+        MenuManager.GoToMenu(MenuName.HighScores);
     }
     
     public void StartGame()

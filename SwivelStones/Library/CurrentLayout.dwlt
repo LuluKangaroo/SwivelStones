@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 274}
   m_MaxSize: {x: 14006, y: 10024}
   vertical: 0
-  controlID: 65
+  controlID: 62
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 398}
   m_MaxSize: {x: 14006, y: 14048}
   vertical: 1
-  controlID: 64
+  controlID: 61
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,8 +144,8 @@ MonoBehaviour:
     y: 323
     width: 696
     height: 394
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 448}
   m_MaxSize: {x: 4004, y: 8048}
   vertical: 1
-  controlID: 97
+  controlID: 115
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 448}
   m_MaxSize: {x: 22012, y: 14048}
   vertical: 0
-  controlID: 96
+  controlID: 114
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -340,8 +340,8 @@ MonoBehaviour:
     y: 0
     width: 696
     height: 323
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -402,23 +402,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 103d0000
-      m_LastClickedID: 15632
-      m_ExpandedIDs: 12d8ffff26d8ffff28d8ffffd4d8ffffd8d8ffffb0daffffc4daffffc6daffff72dbffff76dbffffdeddffff0cdeffff20deffff54dfffff68dfffff80dfffffb4e1ffffa2e3ffff8ae5ffff58e6ffff40e7ffff12e8fffffae9fffffeeaffffaeebffffb6ebfffff4edffff02eeffff0eeeffff44efffff90f6fffffef7ffff2af8ffffd4fbfffff40b0000fe0b0000340c0000be290000f82a00002e2b0000c62e00002c310000443800004e38000074380000f43a0000fe3a0000243b0000e03c0000063d0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: f0e7ffff04e8ffff4ee8ffff52e8ffff56e8ffff5ae8ffff5ee8ffff62e8ffffaee8ffffc2e8ffff0ce9ffff10e9ffff14e9ffff18e9ffff1ce9ffff20e9ffffe2e9ffff92eaffffd6eaffffeaeaffff34ebffff38ebffff3cebffff40ebffffecebfffff0ebffff18ecffff4eecffff7eecffff92ecffff0aeeffff12eeffff18eeffff1ceeffffd0eeffffd4eeffff4eefffff82efffff96efffff0ef1ffff16f1ffff1cf1ffff20f1ffffd4f1ffffd8f1ffff46f2ffffa2f5ffff24f9ffff48f9ffff9ef9ffffd4f9ffff7afaffffe8faffffca2d0000462e0000402f00004a2f0000583000007a3000008c3000009e3000007c350000a2350000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Canvas
+        m_OriginalName: Canvas
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -5662
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 2}
       m_SearchString: 
@@ -513,7 +513,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: d4280000
     m_LastClickedID: 10452
-    m_ExpandedIDs: 0000000070090000d8090000100a00006e0a0000520b0000820b00009c0b0000
+    m_ExpandedIDs: 00000000a42a00000c2b0000442b0000a22b0000842c0000b42c0000ce2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -538,21 +538,21 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 156}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000070090000d8090000100a00006e0a0000520b0000820b00009c0b0000
+    m_ExpandedIDs: ffffffff00000000a42a00000c2b0000442b0000a22b0000842c0000b42c0000ce2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Level
-      m_OriginalName: Level
+      m_Name: NewHighScore
+      m_OriginalName: NewHighScore
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 2628
+      m_UserData: 11770
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
