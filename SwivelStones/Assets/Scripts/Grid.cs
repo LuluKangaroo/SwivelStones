@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Grid: MonoBehaviour
 {
-    public static float gridHeight = 5;
-    public static float gridWidth = 5;
+    public static int gridHeight = 5;
+    public static int gridWidth = 5;
+
+    public static Transform[,] grid = new Transform[gridWidth, gridHeight];
 
     public float gridxy = 0;
     // Start is called before the first frame update
@@ -19,6 +21,13 @@ public class Grid: MonoBehaviour
     {
         CheckUserInput();   
     } 
+
+    /*
+    public void UpdateGrid(Stone stone)
+    {
+
+    }
+    */
 
     void CheckUserInput()
     {
@@ -46,5 +55,15 @@ public class Grid: MonoBehaviour
         {
             transform.RotateAround(Vector3.zero, Vector3.up, 10 * Time.deltaTime);
         }
+    }
+
+    public bool InsideGrid(Vector2 pos)
+    {
+        return ((int)pos.x >= 0 && (int)pos.x < gridWidth && (int)pos.y >= 0);
+    }
+
+    public Vector2 Round (Vector2 pos)
+    {
+        return new Vector2(Mathf.Round(pos.x), Mathf.Round(pos.y));
     }
 }

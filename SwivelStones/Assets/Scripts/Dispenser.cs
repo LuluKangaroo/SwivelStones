@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Dispenser : MonoBehaviour
 {
+    public int SpawnControl = 1;
     // Start is called before the first frame update
     void Start()
     {
-        spawnStone();
+        SpawnStone();
     }
 
     // Update is called once per frame
@@ -16,12 +17,20 @@ public class Dispenser : MonoBehaviour
         
     }
 
-    public void spawnStone()
-    {
-        string[] stoneArr = GetRandomStoneCombo();
-        GameObject newStone1 = (GameObject)Instantiate(Resources.Load(stoneArr[0], typeof(GameObject)), new Vector3(2, 10, -1), Quaternion.identity);
-        GameObject newStone2 = (GameObject)Instantiate(Resources.Load(stoneArr[1], typeof(GameObject)), new Vector3(2, 11, -1), Quaternion.identity);
+    public void SpawnStone()
+    {      
+        if(SpawnControl == 0)
+        {
+            SpawnControl++;
+        }
+        else
+        {
+            string[] stoneArr = GetRandomStoneCombo();
+            GameObject newStone1 = (GameObject)Instantiate(Resources.Load(stoneArr[0], typeof(GameObject)), new Vector3(2, 10, -1), Quaternion.identity);
+            GameObject newStone2 = (GameObject)Instantiate(Resources.Load(stoneArr[1], typeof(GameObject)), new Vector3(2, 11, -1), Quaternion.identity);
 
+            SpawnControl = 0;
+        }
     }
 
     string[] GetRandomStoneCombo()
