@@ -1,5 +1,9 @@
-﻿using UnityEngine;
+﻿//Jacob Berman
+//Swivel Stones
+
+using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Main : MonoBehaviour {
 	public static int h = 12;
@@ -14,6 +18,10 @@ public class Main : MonoBehaviour {
 	private bool findMatches = false;
 	private bool swapEffect = false; // need to be add to Swap fuction!!!
 
+	private int score;
+    public Text scoreText;
+
+
 	static Color[] Colors = new Color[] {
 		Color.red,
 		Color.cyan,
@@ -27,6 +35,8 @@ public class Main : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		GenerateGrid();
+		score = 100;
+        setscoreText();
 	}
 
 	// Update is called once per frame
@@ -284,6 +294,7 @@ public class Main : MonoBehaviour {
 			if (s.matched) {
 				grid [s.x, s.y] = 8;
 				s.DestroyBall();
+
 //				s.StartCoroutine(s.DestroyBlock());
 			}
 		}
@@ -440,6 +451,10 @@ public class Main : MonoBehaviour {
 			}
 		}
 	}
+	void setscoreText()
+    {
+        scoreText.text = "Score " + score.ToString();
+    }
 
 
 	

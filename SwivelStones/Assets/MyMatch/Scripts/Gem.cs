@@ -15,14 +15,11 @@ public class Gem : MonoBehaviour {
 	public static Transform select;
 	public static Transform moveTo;
 
-    private int score;
-    public scoreText;
+
 
 
 	// Use this for initialization
 	void Start () {
-        score = 0;
-        setScoreText();
 	
 	}
 	
@@ -47,9 +44,9 @@ public class Gem : MonoBehaviour {
 
 	public void DestroyBall()
 	{
+		Timer.scoreValue += 10;
 		//ScoreManager.score += scoreValue;
 		Destroy (gameObject);
-        score = score + 1;
 	}
 
 	public void MoveByY(){
@@ -63,10 +60,6 @@ public class Gem : MonoBehaviour {
 	//	ScoreManager.score += scoreValue;
 	}
 
-    void setscoreText()
-    {
-        scoreText.text = "Score " + score.ToString();
-    }
 
 
 }
