@@ -1,7 +1,6 @@
-﻿//Jacob Berman
-//Swivel Stones
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Gem : MonoBehaviour {
 	public int ID;
@@ -15,6 +14,7 @@ public class Gem : MonoBehaviour {
 
 	public static Transform select;
 	public static Transform moveTo;
+
 
 
 
@@ -44,6 +44,7 @@ public class Gem : MonoBehaviour {
 
 	public void DestroyBall()
 	{
+		Timer.scoreValue += 10;
 		//ScoreManager.score += scoreValue;
 		Destroy (gameObject);
 	}
@@ -59,5 +60,6 @@ public class Gem : MonoBehaviour {
 	//	ScoreManager.score += scoreValue;
 	}
 
-	
+
+
 }

@@ -10,5 +10,6 @@ public enum MenuName
     HighScores,
     MainMenu,
     Level,
-    Pause
+    Pause,
+    NewScore
 }

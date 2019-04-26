@@ -28,8 +28,8 @@ public class NewHighScore : MonoBehaviour
 
     int getScore()
     {
-        // TODO
-        return 123;
+        // TODO        
+        return Timer.scoreValue;
     }
 
     public void submit()

@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
     // Method to direct application to GamePlay scene
     public void StartGame()
     {
-        SceneManager.LoadScene("Scene");
+        MenuManager.GoToMenu(MenuName.Level);
     }
 
     // Method to exit the application

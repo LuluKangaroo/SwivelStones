@@ -23,6 +23,12 @@ public static class MenuManager
                 SceneManager.LoadScene("HighScores");
                 break;
 
+            case MenuName.NewScore:
+
+                // case to go to New Scores Menu scene
+                SceneManager.LoadScene("NewHighScore");
+                break;
+
             case MenuName.MainMenu:
 
                 // case to go to Main Menu scene
@@ -38,7 +44,7 @@ public static class MenuManager
             case MenuName.Level:
 
                 // case to go to GamePlay scene
-                SceneManager.LoadScene("Scene");
+                SceneManager.LoadScene("GamePlay");
                 break;
         }
     }
