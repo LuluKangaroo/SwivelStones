@@ -1,4 +1,10 @@
 # SwivelStones
+CSCI 4448
+
+Dr. Montgomery
+
+4/26/19
+
 Match-3 PC game by Lu Liu, Jacob Berman, Josef Los, and Hongyi Chen 
 
 ## Project Overview
