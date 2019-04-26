@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{8692ECB1-BFAB-9AD7-8D17-126B62536CB3}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyMatch/Scripts/Gem.cs">
+    <Files>
+      <File FileName="Assets/MyMatch/Scripts/Gem.cs" Line="120" Column="1" />
+      <File FileName="Assets/MyMatch/Scripts/Main.cs" Line="247" Column="41" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

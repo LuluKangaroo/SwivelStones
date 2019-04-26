@@ -44,7 +44,7 @@ public class Gem : MonoBehaviour {
 
 	public void DestroyBall()
 	{
-		score.scoreValue += 10;
+		Timer.scoreValue += 10;
 		//ScoreManager.score += scoreValue;
 		Destroy (gameObject);
 	}
