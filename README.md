@@ -8,7 +8,7 @@ Dr. Montgomery
 Match-3 PC game by Lu Liu, Jacob Berman, Josef Los, and Hongyi Chen 
 
 ## Project Overview
-In this game the player will attempt match as many stones as possible within the given time limit. Afterwards the number of stones matched will be recorded in a high score system. You can compete with your friends to try and be at the top of the leader board. 
+In this game the player will attempt match as many stones as possible before running out of matches. Afterwards the number of stones matched will be recorded in a high score system. You can compete with your friends to try and be at the top of the leader board. 
 
 ## Files Included
 All of the game files we wrote will be included in the assets folder.
