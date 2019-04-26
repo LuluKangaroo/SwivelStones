@@ -19,7 +19,7 @@ public class Stone : MonoBehaviour
     {
         Gravity();
     }
-
+    
     void Gravity()
     {
         if (Time.time - fall >= fallSpeed)
@@ -37,14 +37,14 @@ public class Stone : MonoBehaviour
             }
         }
     }
-
+    
     Vector2 GetCoords()
     {
         Vector3 pos = transform.position;
         Vector2 ret = pos;
         return ret;
     }
-
+    
     bool CheckPosition()
     {
         if (FindObjectOfType<Grid>().InsideGrid(GetCoords()) == false)
