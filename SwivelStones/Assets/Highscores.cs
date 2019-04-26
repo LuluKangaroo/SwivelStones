@@ -9,9 +9,9 @@ public class Highscores : MonoBehaviour
     public Text names;
     public Text scores;
 
-    // Start is called before the first frame update
     void Start()
     {
+		// sets number, name, and score text
         numbers.text = Leaderboard.allPlaces();
         names.text = Leaderboard.allNames();
         scores.text = Leaderboard.allScores();

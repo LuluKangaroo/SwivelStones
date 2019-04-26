@@ -11,9 +11,13 @@ public class NewHighScore : MonoBehaviour
     int rank;
     int score;
 
-    // Start is called before the first frame update
     void Start()
     {
+		/* checks if new score should be added or not
+		   if yes, display score and rank and continue to allow
+		   user to enter name/ignore score.
+		   if no, go directly to highscores
+		 */
         score = getScore();
         rank = Leaderboard.calcPlace(score);
         if (rank>Leaderboard.MAXSCORES)
@@ -28,17 +32,19 @@ public class NewHighScore : MonoBehaviour
 
     int getScore()
     {
-        // TODO
+        // TODO: gets score of last game
         return 123;
     }
 
     public void submit()
     {
+		// submits new score and goes to highscore screen
         Leaderboard.addNew(score, inputName.text);
         SceneManager.LoadScene("HighScores");
     }
     public void ignoreScore()
     {
+		// ignore new score, go directly to highscore screen
         SceneManager.LoadScene("HighScores");
     }
 }

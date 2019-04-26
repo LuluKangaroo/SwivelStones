@@ -2,9 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/* 
+ * An adapter for PlayerPrefs, to be used for leaderboard functionality
+ * Leaderboard scores are stored in HS_S1, HS_S2, ...
+ * Leaderboard names are stored in HS_N1, HS_N2, ...
+ */
 public class Leaderboard : MonoBehaviour
 {
-
+	// score of last game
+	public static int last_score = 0;
+	
+	// maximum number of scores to be stored in the leaderboard
     public static int MAXSCORES = 8;
 
     public static int fetchScore(int pos)
@@ -25,6 +34,8 @@ public class Leaderboard : MonoBehaviour
     }
     public static int calcPlace(int score)
     {
+		/* calculates the place of the new score, 
+		   or MAXSCORES+1 if not in leaderboard  */
         for (int i=1;i<=MAXSCORES;i++)
         {
             if (fetchScore(i) < score) return i;
@@ -33,6 +44,7 @@ public class Leaderboard : MonoBehaviour
     }
     public static void addNew(int score, string name)
     {
+		/* adds a new score with a name to the leaderboard, if possible */
         int p = calcPlace(score);
         if (p > MAXSCORES) return;
         for (int i=MAXSCORES;i>p;i--)
@@ -45,6 +57,7 @@ public class Leaderboard : MonoBehaviour
     }
     public static string allPlaces()
     {
+		/* returns a newline-separated string of all places */
         string a = "";
         for (int i=1;i<=MAXSCORES;i++)
         {
@@ -54,6 +67,7 @@ public class Leaderboard : MonoBehaviour
     }
     public static string allNames()
     {
+		/* returns a newline-separated string of all leaderboard names */
         string a = "";
         for (int i = 1; i <= MAXSCORES; i++)
         {
@@ -63,6 +77,7 @@ public class Leaderboard : MonoBehaviour
     }
     public static string allScores()
     {
+		/* returns a newline-separated string of all leaderboard scores */
         string a = "";
         for (int i = 1; i <= MAXSCORES; i++)
         {
