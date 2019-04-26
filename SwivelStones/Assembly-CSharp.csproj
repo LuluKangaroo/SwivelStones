@@ -62,9 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Dispenser.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Gem.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\Highscores.cs" />
     <Compile Include="Assets\Scripts\Leaderboard.cs" />
+    <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\Menus\GameOverMessage.cs" />
     <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Menus\MenuManager.cs" />
