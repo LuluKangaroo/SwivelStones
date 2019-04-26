@@ -43,7 +43,13 @@ public class Main : MonoBehaviour {
 				Gem.moveTo = null;
 			}
 		}
-	}
+
+        // pausing game on escape key
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            MenuManager.GoToMenu(MenuName.Pause);
+        }
+    }
 
 	bool CheckIfNear()
 	{

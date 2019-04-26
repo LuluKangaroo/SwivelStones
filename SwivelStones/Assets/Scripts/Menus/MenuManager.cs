@@ -42,7 +42,7 @@ public static class MenuManager
             case MenuName.Level:
 
                 // instantiate prefab
-                SceneManager.LoadScene("Level");
+                SceneManager.LoadScene("Scene");
                 break;
         }
     }
