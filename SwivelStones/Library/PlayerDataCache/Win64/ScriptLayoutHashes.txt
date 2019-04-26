@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/LykaSayaxi/Desktop/SwivelStones/SwivelStones.exe
+C:/Users/LykaSayaxi/Desktop/SwivelStones00/SwivelStones.exe
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/Level.unity
