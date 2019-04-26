@@ -1,7 +1,4 @@
-﻿//Jacob Berman
-//Swivel Stones
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class Main : MonoBehaviour {
